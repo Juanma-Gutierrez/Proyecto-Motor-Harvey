@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="./scripts/scripts.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="./css/style.css" />
+
+        <!-- Fuentes externas -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Jura:wght@500;700&family=Nunito:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Iconos -->
+
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <link
+            rel="shortcut icon"
+            href="./assets/favicon.png"
+            type="image/x-icon"
+        />
+
+        <title>Harvey Motor</title>
+    </head>
+
+    <body>
+        <div class="container grid-1" id="global">
+            <!-- ────────────────────────────────────────────────────────── -->
+            <nav id="menu">
+                <div>
+                    <a href="#header" id="logo-menu"
+                        ><img
+                            src="./assets/logo.png"
+                            alt="logotipo"
+                            title="Logotipo Havey Motor"
+                    /></a>
+                </div>
+                <ul id="menu-principal">
+                    <li><a href="#novedad" title="Novedad">Novedad</a></li>
+                    <li><a href="#moto1-ficha" title="Modelos">Modelos</a></li>
+                    <li>
+                        <a href="#footer" title="Dónde estamos"
+                            >Dónde estamos</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+            <!-- ────────────────────────────────────────────────────────── -->
+            <div id="menu-hamburguesa">
+                <nav>
+                    <a href="#menu-hamburguesa-principal"
+                        ><span class="material-symbols-outlined">
+                            menu
+                        </span></a
+                    >
+                </nav>
+            </div>
+            <div id="menu-hamburguesa-principal">
+                <ul>
+                    <li><a href="#header" title="Inicio">Inicio</a></li>
+                    <li><a href="#novedad" title="Novedad">Novedad</a></li>
+                    <li>
+                        <a href="#moto1-ficha" title="Modelos">Modelos</a>
+                    </li>
+                    <li>
+                        <a href="#footer" title="Dónde estamos"
+                            >Dónde estamos</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#" title="Cerrar">Cerrar</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- ────────────────────────────────────────────────────────── -->
+            <header id="header">
+                <div id="eslogan">
+                    <h1 id="titulo">Para volar sólo se necesitan dos ruedas</h1>
+                </div>
+                <div id="logo-entrada">
+                    <img
+                        src="./assets/logo.png"
+                        alt="logotipo"
+                        title="Logotipo Harvey Motor"
+                    />
+                </div>
+            </header>
+
+            <!-- ────────────────────────────────────────────────────────── -->
+            <div class="mensaje mensaje1">
+                <h2>
+                    Cuatro ruedas mueven el cuerpo,<br />dos ruedas mueven el
+                    alma
+                </h2>
+            </div>
+            <div id="galeria" title="Galería de imágenes">
+                <img src="./gallery/img1.webp" alt="Kansas 1.200" id="img1" />
+                <img src="./gallery/img2.webp" alt="Chicago 1.100" id="img2" />
+                <img src="./gallery/img3.webp" alt="Harlem 1.300" id="img3" />
+            </div>
+            <div class="mensaje mensaje2">
+                <h2>
+                    No importa la moto que conduzcas,<br />importa la manera de
+                    vivirla
+                </h2>
+            </div>
+            <!-- ────────────────────────────────────────────────────────── -->
+            <main id="contenedor-fichas">
+                <!-- ────────────────────────────────────────────────────────── -->
+                <div class="moto-ficha impar" id="moto1-ficha">
+                    <aside class="menu-aside">
+                        <ul class="lista-aside">
+                            <li
+                                class="btn selected"
+                                id="info-ficha1"
+                                title="Información"
+                            >
+                                Información
+                            </li>
+                            <li
+                                class="btn"
+                                id="espe-ficha1"
+                                title="Especificaciones"
+                            >
+                                Especificaciones
+                            </li>
+                            <li class="btn" id="deta-ficha1" title="Detalles">
+                                Detalles
+                            </li>
+                        </ul>
+                    </aside>
+
+                    <div class="foto-ficha">
+                        <img
+                            src="./img/img4.webp"
+                            alt="Kansas 1.200"
+                            id="foto-bloque1"
+                        />
+                    </div>
+                    <div class="container datos-ficha" id="ficha1">
+                        <div class="informacion-ficha" id="informacion-ficha1">
+                            <div class="modelo-ficha">
+                                <h2>Kansas 1.200</h2>
+                            </div>
+                            <div class="eslogan-ficha">
+                                <h3>La libertad en tus manos</h3>
+                            </div>
+                            <div class="info1-ficha">
+                                Las llantas rojas con rayas plateadas, la
+                                pintura roja viva especialmente mezclada que
+                                evoca las motos Oklahoma de 1980 y los gráficos
+                                azul oscuro con reflejos plateados recuerdan a
+                                la Boston 1.250 Edición 50 Aniversario como algo
+                                muy especial.
+                            </div>
+                            <div class="info1-ficha">
+                                Apostando por el oro, los tubos exteriores de la
+                                horquilla irradian calidad, mientras que el
+                                emblema de Kansas y el logotipo de Harvey Motor
+                                desplegando sus alas.
+                            </div>
+                        </div>
+                        <div
+                            class="especificacion-ficha"
+                            id="especificaciones-ficha1"
+                        >
+                            <div class="modelo-ficha">
+                                <h2>Kansas 1.200</h2>
+                            </div>
+                            <div class="eslogan-ficha">
+                                <h3>La libertad en tus manos</h3>
+                            </div>
+                            <div class="info2-ficha">
+                                <ul class="lista-espe">
+                                    <li>
+                                        <span class="identificador"
+                                            >Modelo: </span
+                                        >Kansas 1.200
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Tipo de moto: </span
+                                        >Naked
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Cilindrada: </span
+                                        >1.200cc
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Potencia: </span
+                                        >120cv
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Alimentación: </span
+                                        >Inyección electrónica
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Carrera: </span
+                                        >66,00mm
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Disposición: </span
+                                        >En V
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Combustible: </span
+                                        >Gasolina sin plomo 95
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="detalle-ficha" id="detalles-ficha1">
+                            <div class="info2-ficha">
+                                <div class="modelo-ficha">
+                                    <h2>Kansas 1.200</h2>
+                                </div>
+                                <div class="eslogan-ficha">
+                                    <h3>La libertad en tus manos</h3>
+                                </div>
+                                <ul class="lista-espe">
+                                    <li>
+                                        <span class="identificador"
+                                            >Altura asiento: </span
+                                        >710mm
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Capacidad del depósito: </span
+                                        >13l
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Distancia entre ejes: </span
+                                        >1.535mm
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Distancia mínima al suelo: </span
+                                        >145mm
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Longitud total: </span
+                                        >2.225mm
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Peso en seco declarado: </span
+                                        >223Kg
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ─────────────────────────────────────────────────────── -->
+                <div class="moto-ficha par" id="moto2-ficha">
+                    <aside class="menu-aside">
+                        <ul id="menu2">
+                            <li
+                                class="btn selected"
+                                id="info-ficha2"
+                                title="Información"
+                            >
+                                Información
+                            </li>
+                            <li
+                                class="btn"
+                                id="espe-ficha2"
+                                title="Especificaciones"
+                            >
+                                Especificaciones
+                            </li>
+                            <li class="btn" id="deta-ficha2" title="Detalles">
+                                Detalles
+                            </li>
+                        </ul>
+                    </aside>
+
+                    <div class="foto-ficha">
+                        <img
+                            src="./img/img7.webp"
+                            alt="Kentucky 1.500"
+                            id="foto-bloque2"
+                        />
+                    </div>
+                    <div class="container" id="ficha2">
+                        <div class="informacion-ficha" id="informacion-ficha2">
+                            <div class="modelo-ficha">
+                                <h2>Kentucky 1.500</h2>
+                            </div>
+                            <div class="eslogan-ficha">
+                                <h3>El poder de la carretera</h3>
+                            </div>
+                            <div class="info1-ficha">
+                                La Kentucky 1.500 no es una moto Custom
+                                tradicional. Es diferente a todas, con su motor
+                                bicilíndrico, un chasis único y un
+                                monoamortiguador, es completamente diferente a
+                                lo visto hasta ahora.
+                            </div>
+                            <div class="info1-ficha">
+                                Con la Kentucky 1.500 no hace falta que
+                                pertenezcas a ningún grupo o te encasilles en un
+                                estilo determinado, la Kentucky 1.500 se adapta
+                                al estilo que tu quieras. Una moto accesible en
+                                todos los sentidos, que te animará a disfrutar
+                                de la carretera.
+                            </div>
+                        </div>
+                        <div
+                            class="informacion-ficha"
+                            id="especificaciones-ficha2"
+                        >
+                            <div class="modelo-ficha">
+                                <h2>Kentucky 1.500</h2>
+                            </div>
+                            <div class="eslogan-ficha">
+                                <h3>El poder de la carretera</h3>
+                            </div>
+                            <div class="info2-ficha">
+                                <ul class="lista-espe">
+                                    <li>
+                                        <span class="identificador"
+                                            >Modelo: </span
+                                        >Kentucky 1.500
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Tipo de moto: </span
+                                        >Custom
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Cilindrada: </span
+                                        >1.500cc
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Potencia: </span
+                                        >148cv
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Alimentación: </span
+                                        >Inyección
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Carrera: </span
+                                        >71,50mm
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Disposición: </span
+                                        >En línea
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Combustible: </span
+                                        >Gasolina sin plomo 95
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="informacion-ficha" id="detalles-ficha2">
+                            <div class="info2-ficha">
+                                <div class="modelo-ficha">
+                                    <h2>Kentucky 1.500</h2>
+                                </div>
+                                <div class="eslogan-ficha">
+                                    <h3>El poder de la carretera</h3>
+                                </div>
+                                <ul class="lista-espe">
+                                    <li>
+                                        <span class="identificador"
+                                            >Altura asiento: </span
+                                        >730mm
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Capacidad del depósito: </span
+                                        >14l
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Distancia entre ejes: </span
+                                        >1.625mm
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Distancia mínima al suelo: </span
+                                        >135mm
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Longitud total: </span
+                                        >2.355mm
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Peso en seco declarado: </span
+                                        >253Kg
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ────────────────────────────────────────────────────────── -->
+                <div class="moto-ficha impar" id="novedad">
+                    <aside class="menu-aside">
+                        <ul class="menu3">
+                            <li
+                                class="btn selected"
+                                id="info-ficha3"
+                                title="Información"
+                            >
+                                Información
+                            </li>
+                            <li
+                                class="btn"
+                                id="espe-ficha3"
+                                title="Especificaciones"
+                            >
+                                Especificaciones
+                            </li>
+                            <li class="btn" id="deta-ficha3" title="Detalles">
+                                Detalles
+                            </li>
+                        </ul>
+                    </aside>
+
+                    <div class="foto-ficha">
+                        <img
+                            src="./img/img10.webp"
+                            alt="Chicago 1.100"
+                            id="foto-bloque3"
+                        />
+                    </div>
+                    <div class="container" id="ficha3">
+                        <div class="informacion-ficha" id="informacion-ficha3">
+                            <img
+                                src="./assets/novedad.png"
+                                alt="novedad"
+                                id="sello-novedad"
+                                title="Novedad"
+                            />
+                            <div class="modelo-ficha">
+                                <h2>Chicago 1.100</h2>
+                            </div>
+                            <div class="eslogan-ficha">
+                                <h3>Rompe las barreras</h3>
+                            </div>
+                            <div class="info1-ficha">
+                                Nuestro motor de 1.100 cc se ha mejorado más
+                                allá de lo creíble gracias a nuestra tecnología
+                                Supercharged. El diseño irradia ADN de Harvey
+                                Motor, los elegantes detalles de color, la
+                                pantalla TFT color. Sobrealimenta tu vida.
+                            </div>
+                            <div class="info1-ficha">
+                                La marca Chicago tiene una larga historia que se
+                                remonta casi 50 años atrás. Con este nuevo
+                                modelo, el segundo capítulo de la historia de la
+                                Chicago está a punto de comenzar.
+                            </div>
+                        </div>
+                        <div
+                            class="informacion-ficha"
+                            id="especificaciones-ficha3"
+                        >
+                            <img
+                                src="./assets/novedad.png"
+                                alt="novedad"
+                                id="sello-novedad"
+                                title="Novedad"
+                            />
+                            <div class="modelo-ficha">
+                                <h2>Chicago 1.100</h2>
+                            </div>
+                            <div class="eslogan-ficha">
+                                <h3>Rompe las barreras</h3>
+                            </div>
+                            <div class="info2-ficha">
+                                <ul class="lista-espe">
+                                    <li>
+                                        <span class="identificador"
+                                            >Modelo: </span
+                                        >Chicago 1.100
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Tipo de moto: </span
+                                        >Custom
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Cilindrada: </span
+                                        >1.100cc
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Potencia: </span
+                                        >132cv
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Alimentación: </span
+                                        >Carga frontal electrónica
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Carrera: </span
+                                        >69,00mm
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Disposición: </span
+                                        >En V
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Combustible: </span
+                                        >Gasolina sin plomo 95
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="informacion-ficha" id="detalles-ficha3">
+                            <img
+                                src="./assets/novedad.png"
+                                alt="novedad"
+                                id="sello-novedad"
+                                title="Novedad"
+                            />
+                            <div class="info2-ficha">
+                                <div class="modelo-ficha">
+                                    <h2>Chicago 1.100</h2>
+                                </div>
+                                <div class="eslogan-ficha">
+                                    <h3>Rompe las barreras</h3>
+                                </div>
+                                <ul class="lista-espe">
+                                    <li>
+                                        <span class="identificador"
+                                            >Altura asiento: </span
+                                        >730mm
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Capacidad del depósito: </span
+                                        >14l
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Distancia entre ejes: </span
+                                        >1.675mm
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Distancia mínima al suelo: </span
+                                        >152mm
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Longitud total: </span
+                                        >2.375mm
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Peso en seco declarado: </span
+                                        >246Kg
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ─────────────────────────────────────────────────────── -->
+                <div class="moto-ficha par">
+                    <aside class="menu-aside">
+                        <ul id="menu4">
+                            <li
+                                class="btn selected"
+                                id="info-ficha4"
+                                title="Información"
+                            >
+                                Información
+                            </li>
+                            <li
+                                class="btn"
+                                id="espe-ficha4"
+                                title="Especificaciones"
+                            >
+                                Especificaciones
+                            </li>
+                            <li class="btn" id="deta-ficha4" title="Detalles">
+                                Detalles
+                            </li>
+                        </ul>
+                    </aside>
+
+                    <div class="foto-ficha">
+                        <img
+                            src="./img/img13.webp"
+                            alt="Harlem 1.300"
+                            id="foto-bloque4"
+                        />
+                    </div>
+                    <div class="container" id="ficha4">
+                        <div class="informacion-ficha" id="informacion-ficha4">
+                            <div class="modelo-ficha">
+                                <h2>Harlem 1.300</h2>
+                            </div>
+                            <div class="eslogan-ficha">
+                                <h3>Llegando a tu destino</h3>
+                            </div>
+                            <div class="info1-ficha">
+                                En cualquier calle o carretera, la Harlem 1.300
+                                ofrece el máximo placer de conducción. Solo o
+                                con compañía, una vuelta a la esquina o
+                                alrededor del mundo, una combinación única de un
+                                motor de cuatro cilindros y 1.300cc, más un
+                                chasis ágil, es la receta perfecta para asegurar
+                                la diversión en cualquier circunstancia.
+                            </div>
+                        </div>
+                        <div
+                            class="informacion-ficha"
+                            id="especificaciones-ficha4"
+                        >
+                            <div class="modelo-ficha">
+                                <h2>Harlem 1.300</h2>
+                            </div>
+                            <div class="eslogan-ficha">
+                                <h3>Llegando a tu destino</h3>
+                            </div>
+                            <div class="info2-ficha">
+                                <ul class="lista-espe">
+                                    <li>
+                                        <span class="identificador"
+                                            >Modelo: </span
+                                        >Harlem 1.300
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Tipo de moto: </span
+                                        >Naked
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Cilindrada: </span
+                                        >1.300cc
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Potencia: </span
+                                        >156cv
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Alimentación: </span
+                                        >Inyección electrónica
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Carrera: </span
+                                        >72,00mm
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Disposición: </span
+                                        >En V
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Combustible: </span
+                                        >Gasolina sin plomo 95
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="informacion-ficha" id="detalles-ficha4">
+                            <div class="info2-ficha">
+                                <div class="modelo-ficha">
+                                    <h2>Harlem 1.300</h2>
+                                </div>
+                                <div class="eslogan-ficha">
+                                    <h3>Llegando a tu destino</h3>
+                                </div>
+                                <ul class="lista-espe">
+                                    <li>
+                                        <span class="identificador"
+                                            >Altura asiento: </span
+                                        >680mm
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Capacidad del depósito: </span
+                                        >15l
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Distancia entre ejes: </span
+                                        >1.635mm
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Distancia mínima al suelo: </span
+                                        >135mm
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Longitud total: </span
+                                        >2.355mm
+                                    </li>
+                                    <li>
+                                        <span class="identificador"
+                                            >Peso en seco declarado: </span
+                                        >225Kg
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer id="footer">
+                <div id="servicios">
+                    <h3>SERVICIOS</h3>
+                    <a class="enlace" id="seguros" href="./html/seguros.html"
+                        >Servicio de seguros</a
+                    >
+                    <a class="enlace" id="garantia" href="./html/garantia.html"
+                        >Servicio de garantía</a
+                    >
+                    <a id="asistencia" href="#footer"
+                        >Asistencia en carretera</a
+                    >
+                    <a id="terminos" href="#footer">Términos y condiciones</a>
+                    <a id="privacidad" href="#footer">Aviso de privacidad</a>
+                    <a id="cookies" href="#footer">Política de cookies</a>
+                </div>
+                <div id="redessociales">
+                    <div class="rrss" alt="Instagram" title="Instagram">e</div>
+                    <div class="rrss" alt="Facebook" title="Facebook">G</div>
+                    <div class="rrss" alt="Twitter" title="Twitter">Ö</div>
+                    <div class="rrss" alt="Whatsapp" title="Whatsapp">î</div>
+                    <div class="rrss" alt="Telegram" title="Telegram">Ä</div>
+                </div>
+                <div id="direccion">
+                    <p>C/ Frederick Terman, 3</p>
+                    <p>29590 - Campanillas - Málaga</p>
+                    <p>952.111.111</p>
+                    <p>600.000.000</p>
+                    <br />
+                    <a class="enlace" id="contacto" href="#cont-formulario"
+                        >Contacto</a
+                    >
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2103.319177529391!2d-4.555062636003413!3d36.74042058790417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f1d06d8246c9%3A0xb6dccfba3e65a1f2!2sFP%20IES%20Campanillas%20PTA!5e0!3m2!1ses!2ses!4v1653150239804!5m2!1ses!2ses"
+                    width="300"
+                    height="200"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Mapa de situación"
+                    id="mapa"
+                ></iframe>
+            </footer>
+            <!-- ───────────────────────────────────────────────────────── -->
+            <div class="cont-form" id="cont-formulario">
+                <div class="container" id="formulario">
+                    <form action="" id="formul">
+                        <h3>Formulario de contacto</h3>
+                        <label for="nombre">Nombre: </label>
+                        <input
+                            type="text"
+                            id="nombre"
+                            placeholder="Introduce nombre"
+                            title="Introduce nombre"
+                        />
+                        <fieldset id="tipoMoto">
+                            <legend>Tipo de motocicleta</legend>
+                            <div
+                                id="tipo"
+                                title="Selecciona tipo de motocicleta"
+                            >
+                                <input
+                                    type="radio"
+                                    name="tipo"
+                                    id="custom"
+                                    class="radio"
+                                />
+                                <label for="custom">Custom</label>
+                                <input
+                                    type="radio"
+                                    name="tipo"
+                                    id="oldschool"
+                                    class="radio"
+                                />
+                                <label for="oldschool">OldSchool</label>
+                                <input
+                                    type="radio"
+                                    name="tipo"
+                                    id="naked"
+                                    class="radio"
+                                /><label for="naked">Naked</label>
+                            </div>
+                        </fieldset>
+                        <label for="email">Correo electrónico: </label>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Introduce correo electrónico"
+                            title="Introduce correo electrónico"
+                        />
+                        <label for="obser">Comentarios: </label>
+                        <textarea
+                            name="comentarios"
+                            rows="3"
+                            cols="40"
+                            placeholder="Escribe aquí tus comentarios"
+                            title="Escribe aquí tus comentarios"
+                        ></textarea>
+                        <div id="botonera-formulario">
+                            <button
+                                type="submit"
+                                id="enviar"
+                                title="Enviar"
+                                class="boton"
+                            >
+                                Enviar
+                            </button>
+                            <button type="reset" title="Borrar" class="boton">
+                                Borrar
+                            </button>
+                            <button
+                                type="reset"
+                                title="Cancelar"
+                                class="boton boton-a"
+                            >
+                                <a href="#" title="Cancelar" id="cancelar"
+                                    >Cancelar</a
+                                >
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

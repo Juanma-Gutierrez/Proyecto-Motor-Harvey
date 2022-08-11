@@ -1,0 +1,667 @@
+/* Definición de variables de colores */
+:root {
+    --oscuro: rgb(31, 26, 56);
+    --claro: rgb(235, 245, 238);
+    --turquesa: rgb(48, 107, 172);
+    --oscuroTransparente: rgb(31, 26, 56, 0.9);
+}
+
+/*
+Colores:
+    --oscuro: rgb(31, 26, 56); #1F1A38
+    --claro: rgb(235, 245, 238); #EBF5EE
+    --turquesa: rgb(48, 107, 172); #306BAC
+    --oscuroTransparente: rgb(31, 26, 56, 0.9);
+
+Fuentes:
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Jura', sans-serif;
+    font-family: 'Nunito', sans-serif;
+ */
+
+@font-face {
+    font-family: "social_shapesregular";
+    src: url("../assets/social_shapes-webfont.woff2") format("woff2"),
+        url("../assets/social_shapes-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+*::-webkit-scrollbar {
+    width: 0px; /* escondemos la barra de desplazamiento */
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    transition: all 0.4s;
+    scroll-behavior: smooth;
+    /*               border: 1px solid red;  */
+}
+
+hr {
+    border: 1px var(--turquesa) solid;
+}
+
+#menu a {
+    text-decoration: none;
+    color: var(--claro);
+}
+
+a:visited {
+    color: var(--claro);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url("../assets/patron.png");
+    background-size: 200px;
+    z-index: -1;
+}
+
+body * {
+    overflow-x: hidden;
+    max-width: 1920px;
+}
+
+#global {
+    max-width: 1920px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas:
+        "menu menu menu menu menu menu menu menu menu menu menu menu"
+        "head head head head head head head head head head head head"
+        ".    .    men1 men1 men1 men1 men2 men2 men2 men2 .    ."
+        ".    .    men3 men3 men3 men3 men4 men4 men4 men4 .    ."
+        ".    .    men5 men5 men5 men5 men6 men6 men6 men6 .    ."
+        "foot foot foot foot foot foot foot foot foot foot foot foot"
+        "form form form form form form form form form form form form ";
+    background-color: var(--claro);
+}
+
+/* ──────────────────────────────────────────────────────────────────── */
+#header {
+    align-items: center;
+    background-color: var(--claro);
+    color: var(--oscuro);
+    display: flex;
+    flex-direction: column;
+    height: min-content;
+    width: 100vw;
+    grid-area: head;
+    padding: 30px;
+}
+
+#header h1 {
+    padding: 30px 20px;
+}
+#header p {
+    padding: 10px 10px;
+}
+/* ──────────────────────────────────────────────────────────────────── */
+#menu {
+    grid-area: menu;
+    background-color: var(--oscuro);
+    display: flex;
+    height: min-content;
+    width: 100vw;
+    min-height: 50px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#logo-menu {
+    display: flex;
+    height: 35px;
+    margin: 5px 20px;
+}
+#logo-menu img {
+    object-fit: contain;
+}
+#menu-principal {
+    display: flex;
+    align-items: center;
+    width: 55%;
+    margin: 0px 10px;
+    max-width: 450px;
+    min-width: 250px;
+    justify-content: space-between;
+}
+
+#menu-principal li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-grow: 1;
+}
+
+#menu-principal li a {
+    padding: 10px 20px;
+}
+#menu-principal li:hover {
+    background-color: var(--turquesa);
+    flex-grow: 3;
+    cursor: pointer;
+}
+#menu-principal li a {
+    font-size: 2vmax;
+}
+/* ──────────────────────────────────────────────────────────────────── */
+#menu-hamburguesa {
+    position: sticky;
+    top: 0px;
+    grid-area: menu;
+    width: 100%;
+    height: min-content;
+    background-color: var(--oscuro);
+    color: var(--claro);
+    z-index: 5;
+}
+
+#menu-hamburguesa span {
+    font-size: 2.5rem;
+    padding: 5px 10px;
+    background-color: var(--oscuro);
+    color: var(--claro);
+}
+
+#menu-hamburguesa-principal {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 0px;
+    transition: 1s ease;
+    background-color: var(--oscuro);
+    color: var(--claro);
+    z-index: 5;
+}
+
+#menu-hamburguesa-principal:target {
+    display: flex;
+    height: min-content;
+    top: 45px;
+}
+
+#menu-hamburguesa-principal li {
+    padding: 10px 30px;
+    font-size: 1.5rem;
+}
+
+#menu-hamburguesa-principal a,
+#menu-hamburguesa-principal a:visited {
+    text-decoration: none;
+    color: var(--claro);
+}
+
+/* ──────────────────────────────────────────────────────────────────── */
+.mensaje {
+    background-color: var(--oscuro);
+    color: var(--claro);
+    padding: 20px 0px;
+    height: min-content;
+    width: 100vw;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+}
+
+/* ──────────────────────────────────────────────────────────────────── */
+.informacion {
+    height: auto;
+    background-color: var(--claro);
+    color: var(--oscuro);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 3px var(--oscuro) solid;
+    margin: 20px;
+}
+.informacion:hover {
+    transform: scale(1.03) translateY(-10px);
+    box-shadow: 0px 10px 20px var(--oscuroTransparente);
+}
+.icono {
+    background-image: url(../assets/iconosA.png);
+    background-size: 300px;
+    width: 100px;
+    height: 100px;
+}
+.icono2 {
+    background-image: url(../assets/iconosB.png);
+    background-size: 300px;
+    width: 100px;
+    height: 100px;
+}
+.info {
+    text-align: center;
+    width: 100%;
+}
+
+.info h2 {
+    font-family: "Jura", sans-serif;
+    padding: 10px;
+    height: auto;
+}
+.info p {
+    font-family: "Fira Sans", sans-serif;
+    height: auto;
+}
+
+#icono1 {
+    background-position: 0px 0px;
+}
+#icono2 {
+    background-position: 100px 0px;
+}
+#icono3 {
+    background-position: 200px 0px;
+}
+#icono4 {
+    background-position: 0px 100px;
+}
+#icono6 {
+    background-position: 100px 100px;
+}
+#icono5 {
+    background-position: 200px 100px;
+}
+
+#info1 {
+    grid-area: men1;
+}
+#info2 {
+    grid-area: men2;
+}
+#info3 {
+    grid-area: men3;
+}
+#info4 {
+    grid-area: men4;
+}
+#info5 {
+    grid-area: men5;
+}
+#info6 {
+    grid-area: men6;
+}
+
+/* ──────────────────────────────────────────────────────────────────── */
+footer {
+    background-color: var(--oscuro);
+    color: var(--claro);
+    grid-area: foot;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+        "servicios"
+        "rrss"
+        "direccion"
+        "mapa";
+    gap: 10px;
+    height: min-content;
+    width: 100vw;
+    justify-content: space-around;
+    margin: 0;
+    padding: 20px;
+    place-items: center;
+    z-index: 1;
+}
+#redessociales {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+footer .rrss {
+    grid-area: rrss;
+    font-family: "social_shapesregular";
+    padding: 5px;
+    margin: 5px;
+    font-size: 2rem;
+    color: var(--claro);
+    background-color: var(--oscuro);
+    border-radius: 5px;
+}
+footer #direccion {
+    grid-area: direccion;
+}
+footer #servicios {
+    grid-area: servicios;
+    display: flex;
+    flex-direction: column;
+}
+
+#servicios a {
+    text-decoration: none;
+    background-color: var(--oscuro);
+    color: var(--claro);
+}
+
+#servicios a:visited {
+    background-color: var(--oscuro);
+    color: var(--claro);
+}
+
+footer #mapa {
+    grid-area: mapa;
+}
+footer .rrss:hover {
+    color: var(--claro);
+    background-color: var(--turquesa);
+    cursor: pointer;
+}
+
+footer #footer-info {
+    display: flex;
+    flex-direction: column;
+}
+#direccion {
+    overflow: hidden;
+    height: 112%;
+}
+#direccion p {
+    padding: 3px;
+}
+
+#servicios h3 {
+    text-align: center;
+    padding: 10px;
+}
+
+#direccion #contacto {
+    text-decoration: none;
+    color: var(--claro);
+    border: 1px var(--turquesa) solid;
+    padding: 10px;
+    margin: 5px;
+}
+
+#servicios .enlace,
+#direccion .enlace {
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px var(--turquesa) solid;
+    margin: 3px;
+}
+
+#servicios a,
+#direccion a {
+    padding: 3px 20px;
+}
+
+#servicios .enlace:hover,
+#direccion .enlace:hover {
+    color: var(--claro);
+    background-color: var(--turquesa);
+    cursor: pointer;
+}
+
+/* ──────────────────────────────────────────────────────────────────── */
+#cont-formulario {
+    width: 100vw;
+    height: 0%;
+}
+
+#cont-formulario:target {
+    width: 100vw;
+    height: 90%;
+}
+
+.cont-form {
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 0vw;
+    bottom: 10px;
+}
+
+#formulario {
+    grid-area: form;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--turquesa);
+    color: var(--claro);
+    border: 5px var(--oscuro) solid;
+    border-radius: 10px;
+    display: flex;
+    width: min-content;
+    height: min-content;
+    padding: 10px 20px;
+    margin: 20px auto 5px;
+}
+
+#formul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 10px;
+}
+
+#formul #tipo {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+#formul #tipoMoto {
+    margin: 10px 0px;
+}
+#formul label {
+    margin: 10px 0px 5px 0px;
+}
+#formul input,
+#formul textarea {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+#botonera-formulario {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-around;
+}
+
+#botonera-formulario .boton {
+    background-color: var(--claro);
+    border-radius: 5px;
+    border-color: 15px red solid;
+    color: var(--oscuro);
+    margin: 5px;
+    padding: 10px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    width: 100%;
+}
+
+#formulario .boton:hover {
+    background-color: var(--oscuro);
+    color: var(--claro);
+}
+
+#botonera-formulario .boton-a {
+    padding: 10px 0px;
+}
+#botonera-formulario a,
+#botonera-formulario a:visited {
+    margin: 0;
+    padding: 10px;
+    color: var(--oscuro);
+    text-decoration: none;
+}
+#botonera-formulario a:hover {
+    color: var(--claro);
+    text-decoration: none;
+}
+
+/* ──────────────────────────────────────────────────────────────────── */
+@media only screen and (min-width: 1920px) {
+    #menu-principal li a {
+        font-size: 1.1rem;
+    }
+    .menu-aside {
+        display: flex;
+    }
+    footer {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "servicios rrss mapa"
+            "servicios direccion mapa";
+        justify-content: center;
+    }
+
+    #global {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: min-content min-content repeat(4, min-content);
+        grid-template-areas:
+            "menu menu menu menu menu menu menu menu menu menu menu menu"
+            "head head head head head head head head head head head head"
+            "men1 men1 men1 men1 men2 men2 men2 men2 men3 men3 men3 men3"
+            "men4 men4 men4 men4 men5 men5 men4 men4 men6 men6 men6 men6"
+            "foot foot foot foot foot foot foot foot foot foot foot foot"
+            "form form form form form form form form form form form form";
+    }
+    #menu-hamburguesa,
+    #menu-hamburguesa-principal {
+        display: none;
+    }
+    #menu {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1920px) {
+    #menu-principal li a {
+        font-size: 1.1rem;
+    }
+
+    #global {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: min-content min-content repeat(4, min-content);
+        grid-template-areas:
+            "menu menu menu menu menu menu menu menu menu menu menu menu"
+            "head head head head head head head head head head head head"
+            "men1 men1 men1 men1 men2 men2 men2 men2 men3 men3 men3 men3"
+            "men4 men4 men4 men4 men5 men5 men4 men4 men6 men6 men6 men6"
+            "foot foot foot foot foot foot foot foot foot foot foot foot"
+            "form form form form form form form form form form form form";
+    }
+
+    #header h1 {
+        padding: 30px 20px;
+    }
+    #header p {
+        padding: 10px 100px;
+    }
+
+    footer {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 55px auto;
+        grid-template-areas:
+            "servicios rrss mapa"
+            "servicios direccion mapa";
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    #footer-info {
+        display: flex;
+    }
+    #menu-hamburguesa,
+    #menu-hamburguesa-principal {
+        display: none;
+    }
+    #menu {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 950px) {
+    footer #mapa {
+        max-width: 200px;
+    }
+    #menu-hamburguesa,
+    #menu-hamburguesa-principal {
+        display: none;
+    }
+    #menu {
+        display: flex;
+    }
+}
+@media only screen and (min-width: 361px) and (max-width: 768px) {
+    #titulo {
+        font-size: 8vw;
+    }
+    #global {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto auto repeat(6, min-content) auto auto;
+        grid-template-areas:
+            "menu menu menu menu menu menu menu menu menu menu menu menu"
+            "head head head head head head head head head head head head"
+            "men1 men1 men1 men1 men1 men1 men1 men1 men1 men1 men1 men1"
+            "men2 men2 men2 men2 men2 men2 men2 men2 men2 men2 men2 men2"
+            "men3 men3 men3 men3 men3 men3 men3 men3 men3 men3 men3 men3"
+            "men4 men4 men4 men4 men4 men4 men4 men4 men4 men4 men4 men4"
+            "men5 men5 men5 men5 men5 men5 men5 men5 men5 men5 men5 men5"
+            "men6 men6 men6 men6 men6 men6 men6 men6 men6 men6 men6 men6"
+            "foot foot foot foot foot foot foot foot foot foot foot foot"
+            "form form form form form form form form form form form form";
+    }
+    #menu-hamburguesa,
+    #menu-hamburguesa-principal {
+        display: flex;
+    }
+    #menu {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    #titulo {
+        font-size: 8vw;
+    }
+
+    #global {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto auto repeat(6, min-content) auto auto;
+        grid-template-areas:
+            "menu menu menu menu menu menu menu menu menu menu menu menu"
+            "head head head head head head head head head head head head"
+            "men1 men1 men1 men1 men1 men1 men1 men1 men1 men1 men1 men1"
+            "men2 men2 men2 men2 men2 men2 men2 men2 men2 men2 men2 men2"
+            "men3 men3 men3 men3 men3 men3 men3 men3 men3 men3 men3 men3"
+            "men4 men4 men4 men4 men4 men4 men4 men4 men4 men4 men4 men4"
+            "men5 men5 men5 men5 men5 men5 men5 men5 men5 men5 men5 men5"
+            "men6 men6 men6 men6 men6 men6 men6 men6 men6 men6 men6 men6"
+            "foot foot foot foot foot foot foot foot foot foot foot foot"
+            "form form form form form form form form form form form form";
+    }
+    #menu-hamburguesa,
+    #menu-hamburguesa-principal {
+        display: flex;
+    }
+    #menu {
+        display: none;
+    }
+}
