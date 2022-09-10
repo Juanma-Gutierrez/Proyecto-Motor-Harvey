@@ -55,22 +55,29 @@ temática libre.
 
 -   A continuación, una vez realizado el proyecto se pasará el test de Usabilidad SUS a un compañero.
 
-![Landing page 1](https://raw.githubusercontent.com/Juanma-Gutierrez/Proyecto-Motor-Harvey/main/assets/readme.md/photo01.jpg)
-
-![Landing page 2](https://raw.githubusercontent.com/Juanma-Gutierrez/Proyecto-Motor-Harvey/main/assets/readme.md/photo02.jpg)
-
-![Landing page 3](https://raw.githubusercontent.com/Juanma-Gutierrez/Proyecto-Motor-Harvey/main/assets/readme.md/photo03.jpg)
-
-![Landing page 4](https://raw.githubusercontent.com/Juanma-Gutierrez/Proyecto-Motor-Harvey/main/assets/readme.md/photo04.jpg)
-
-![Modo responsive 1](https://raw.githubusercontent.com/Juanma-Gutierrez/Proyecto-Motor-Harvey/main/assets/readme.md/photo05.jpg)
-
-![Modo responsive 2](https://raw.githubusercontent.com/Juanma-Gutierrez/Proyecto-Motor-Harvey/main/assets/readme.md/photo06.jpg)
 
 
 ## Comenzando 🚀
 
 Abrir el archivo index.html y automáticamente se pone en marcha la aplicación en tu navegador.
+
+<img src="https://raw.githubusercontent.com/Juanma-Gutierrez/Proyecto-Motor-Harvey/main/assets/readme.md/photo01.jpg" width="600">
+
+<img src="https://raw.githubusercontent.com/Juanma-Gutierrez/Proyecto-Motor-Harvey/main/assets/readme.md/photo02.jpg" width="600">
+
+<img src="https://raw.githubusercontent.com/Juanma-Gutierrez/Proyecto-Motor-Harvey/main/assets/readme.md/photo03.jpg" width="600">
+
+<img src="https://raw.githubusercontent.com/Juanma-Gutierrez/Proyecto-Motor-Harvey/main/assets/readme.md/photo04.jpg" width="600">
+
+
+## Modo responsive 📱
+
+Ejemplos del modo responsive.
+
+<img src="https://raw.githubusercontent.com/Juanma-Gutierrez/Proyecto-Motor-Harvey/main/assets/readme.md/photo05.jpg" width="300"> 
+
+<img src="https://raw.githubusercontent.com/Juanma-Gutierrez/Proyecto-Motor-Harvey/main/assets/readme.md/photo06.jpg" width="300">
+
 
 ## Lenguajes empleados:
 
