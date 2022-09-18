@@ -91,13 +91,13 @@ Ejemplos del modo responsive.
 
 ## Lenguajes empleados:
 
-<img src="https://img.shields.io/badge/-HTML5-014267?logo=html5&style=flat-square"> <img src="https://img.shields.io/badge/-CSS3-014267?logo=css3&style=flat-square">
-<img src="https://img.shields.io/badge/-Javascript-014267?logo=javascript&style=flat-square">
+<img src="https://img.shields.io/badge/-HTML5-014267?logo=html5&style=for-the-badge"> <img src="https://img.shields.io/badge/-CSS3-014267?logo=css3&style=for-the-badge"> <img src="https://img.shields.io/badge/-Javascript-014267?logo=javascript&style=for-the-badge">
 
 
 ## Construido con 🛠️
 
-<img src="https://img.shields.io/badge/-Visual Studio Code-0273b4?logo=visualstudiocode&style=flat-square">
+<img src="https://img.shields.io/badge/-Visual Studio Code-0273b4?logo=visualstudiocode&style=for-the-badge">
+
 
 
 ## Autor ✒️
