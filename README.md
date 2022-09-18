@@ -2,6 +2,16 @@
 
 Ejercicio final de Lenguaje de marcas HTML y CSS, que debe cubrir las siguientes especificaciones:
 
+## Índice
+1. [Visión general](#visión-general-)
+2. [Objetivos](#objetivos-)
+3. [Especificaciones](#especificaciones-)
+4. [Comenzando](#comenzando-)
+5. [Modo responsive](#modo-responsive-)
+6. [Lenguajes empleados](#lenguajes-empleados)
+7. [Construido con](#construido-con-%EF%B8%8F)
+8. [Autor](#autor-%EF%B8%8F)
+
 ## Visión general 👀
 
 Diseñar un mapa de navegación y desarrollar una interfaz de una página web con
@@ -81,13 +91,14 @@ Ejemplos del modo responsive.
 
 ## Lenguajes empleados:
 
--   HTML
--   CSS
--   Javascript
+<img src="https://img.shields.io/badge/-HTML5-014267?logo=html5&style=flat-square"> <img src="https://img.shields.io/badge/-CSS3-014267?logo=css3&style=flat-square">
+<img src="https://img.shields.io/badge/-Javascript-014267?logo=javascript&style=flat-square">
+
 
 ## Construido con 🛠️
 
--   Visual Studio Code
+<img src="https://img.shields.io/badge/-Visual Studio Code-0273b4?logo=visualstudiocode&style=flat-square">
+
 
 ## Autor ✒️
 
