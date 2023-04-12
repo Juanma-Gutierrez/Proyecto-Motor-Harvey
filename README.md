@@ -1,7 +1,5 @@
 # Proyecto final de Lenguaje de marcas: HTML, CSS del Certificado de Profesionalidad de Desarrollo de Aplicaciones Web 🧰
 
-Ejercicio final de Lenguaje de marcas HTML y CSS, que debe cubrir las siguientes especificaciones:
-
 ## Índice
 1. [Visión general](#visión-general-)
 2. [Objetivos](#objetivos-)
@@ -58,6 +56,8 @@ temática libre.
     D. Web responsive para las resolución < 360px < 768px.
 
 ## Especificaciones ⚙
+
+Ejercicio final de Lenguaje de marcas HTML y CSS, que debe cubrir las siguientes especificaciones:
 
 -   La interfaz tendrá como mínimo una página principal y 2 páginas adyacentes que estén enlazadas.
 
